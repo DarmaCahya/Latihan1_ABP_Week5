@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+Route::get('/lat1', 'App\Http\Controllers\Lat1Controller@index');
+
+Route::get('/lat1/m2', 'App\Http\Controllers\Lat1Controller@methode2');
